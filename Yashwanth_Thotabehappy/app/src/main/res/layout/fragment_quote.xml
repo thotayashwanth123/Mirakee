@@ -1,0 +1,87 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".QuoteFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#E20505"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_mono_medium_italic"
+            android:padding="5dp"
+            android:text="yashwanth"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18dp">
+
+        </TextView>
+
+
+        <com.like.LikeButton
+            android:id="@+id/star_button"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="170dp"
+            app:liked="false"
+            app:icon_size="25dp"
+            app:icon_type="star" />
+
+        <!--<com.like.LikeButton-->
+            <!--android:id="@+id/starton"-->
+            <!--android:layout_width="29dp"-->
+            <!--android:layout_height="28dp"-->
+            <!--android:layout_marginLeft="13dp"-->
+            <!--android:layout_marginTop="140dp"-->
+            <!--app:liked="false"-->
+            <!--app:icon_size="25dp"-->
+            <!--app:icon_type="heart" />-->
+
+
+        <ImageView
+            android:id="@+id/sharing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="173dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_share_black_24dp" />
+
+        <!--android:tint="@color/_light_green"-->
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/byAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="cursive"
+        android:text="Author"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+</android.support.constraint.ConstraintLayout>

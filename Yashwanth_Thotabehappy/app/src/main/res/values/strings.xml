@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BeHappy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="app_name">Yashwanth Thota</string>-->
+    <string name="profileName">YASHWANTH THOTA</string>
+    <string name="profileEducation">Batchlor of Technology, Amrita Vishwavidyapeetham</string>
+    <string name="skillsTitle">My Skills :</string>
+    <string name="skillC">C</string>
+    <string name="skillCPP">C++</string>
+    <string name="skillJava">Java</string>
+    <string name="skillPython">Python</string>
+    <string name="skillHTML">HTML</string>
+    <string name="skillCSS">CSS</string>
+    <string name="skillJS">Javascript</string>
+    <string name="skillsDBMS">DBMS</string>
+    <string name="skillsAlgos">Algorithms</string>
+    <string name="skillsDS">Data structures</string>
+    <string name="project_lable">Project</string>
+    <string name="resume_lable">Resume</string>
+    <string name="skillsopen">Open Source</string>
+    <string name="skillsos">Operating System</string>
+</resources>

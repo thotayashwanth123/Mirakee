@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="203dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/profilepicture"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/profileName"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+        app:layout_constraintStart_toStartOf="@+id/profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+    <TextView
+        android:id="@+id/profileEdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/profileEducation"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/profileName"
+        app:layout_constraintStart_toStartOf="@+id/profileName"
+        app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillsTitle"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillC" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillCPP" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillJava" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillPython" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillHTML" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillCSS" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillJS" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillsDBMS" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillsAlgos" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillsDS" />
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillsopen" />
+
+
+            <TextView
+                style="@style/skills_items"
+                android:text="@string/skillsos" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/skillsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/skillsTitle"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileEdu" />
+</android.support.constraint.ConstraintLayout>
